@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800;900&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap' );
+
+*
+{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+body
+{
+    font-family: 'Fira Sans' , sans-serif;
+}
+
+img
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+header
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background-color: transparent;
+}
+
+.logo
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.menu
+{
+    display: flex;
+}
+
+.menu a
+{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.menu a:hover
+{
+    border-bottom: 2px solid white;
+}
+
+#icone-menu
+{
+    color: white;
+    font-size: 35px;
+    z-index: 1001;
+    cursor:pointer;
+    display: none;
+}
+
+.goglin
+{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245deg, #4d9595 0%, #1b837e 28%, #0c3834 75% );
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section
+{
+    padding: 0 19%;
+}
+
+.goblin-texto h5
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.goblin-texto h1
+{
+    font-family: 'Permanent Marker' , cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.goblin-texto h4
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.goblin-texto p
+{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.goblin.img
+{
+    width: 700px;
+    height: auto;
+}
+
+.goblin-texto a
+{
+    display: inline-block;
+    color: white;
+    background-color: #4d9595;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.goblin-texto a:hover
+{
+    background: transparent;
+    border: 1px solid white;
+    transform:  translate(8px);
+}
+
+.goblin-texto a.ctta
+{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.goblin-texto a.ctaa i
+{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icones
+{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icones i
+{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icones i:hover
+{
+    color: #4d9595;
+    transform: translateY(-5px);
+}
+
+.rolagem
+{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.rolagem i
+{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d9595;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.rolagem i:hover
+{
+    transform: translateY(-5px);
+}
+
+@media (max-width:1535px)
+{
+    header
+    {
+        padding: 15px 3%;
+        transition: 2s;
+    }
+    .icones
+    {
+        padding: 0 3%;
+        transition: 2s;
+    }
+    .rolagem
+    {
+        right: 3%;
+        transition: 2s;
+    }
+}
+
+@media (max-width:1460px)
+{
+    section
+    {
+        padding: 0 12%;
+        transition: 2s;
+    }
+}
+
+@media (max-width:1340)
+{
+    .goblin-img img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .goblin-texto h1
+    {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .goblin-texto h5
+    {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:1195px)
+{
+    section
+    {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .goblin-texto
+    {
+        padding-top: 115px;
+    }
+    .goblin-img
+    {
+        text-align: center;
+    }
+    .goblin-img img
+    {
+        width: 560px;
+        height: auto;
+    }
+    .rolagem
+    {
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width:1460px)
+{
+    section
+    {
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width:1340px)
+{
+    .goblin-img img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .goblin-texto h1
+    {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .goblin-texto h5
+    {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:1195px)
+{
+    section
+    {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .goblin-texto
+    {
+        padding-top: 115px;
+    }
+    .goblin-img
+    {
+        text-align: center;
+    }
+    .goblin-img img
+    {
+        width: 560px;
+        height: auto;
+    }
+    .goglin
+    {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icones
+    {
+        display: none;
+    }
+    .rolagem
+    {
+        display: none;
+    }
+}
+
+@media (max-width:990px)
+{
+    #icone-menu
+    {
+        display: block;
+    }
+    .menu
+    {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: fit-content;
+        height: fit-content;
+        background: #4d9595;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 50px;
+        transition: all .55s ease;
+    }
+
+    .abrir
+    {
+        display: flex;
+    }
+    .menu a
+    {
+        display: block;
+        margin-left: 0;
+        margin: 7px 0;
+    }
+
+}
+
+@media (max-width:680px)
+{
+    .goblin-img
+    {
+        width: 100%;
+        height: auto;
+    }
+}
